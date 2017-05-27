@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="ScanPlugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>ScanPlugin</name>
+	<DESCRIPTION>YuRi</DESCRIPTION>
+	<js-module name="ScanPlugin" src="www/ScanPlugin.js">
+		<clobbers target="ScanPlugin" />
+	</js-module>
+		<platform name="android">
+			<config-file parent="/*" target="res/xml/config.xml">
+				<feature name="ScanPlugin">
+					<param name="android-package" value="ScanPlugin.ScanPlugin" />
+					<param name="onload" value="true" />
+				</feature>
+		    </config-file>
+		<source-file src="src/android/ScanPlugin.java" target-dir="src/ScanPlugin" />
+		<source-file src="src/android/ScannerAPI.jar" target-dir="libs" />
+		<source-file src="src/android/ok.ogg" target-dir="res/raw" />
+		<source-file src="src/android/error.ogg" target-dir="res/raw" />
+	 </platform>
+</plugin>
