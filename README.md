@@ -4,5 +4,6 @@
 
 安装
 ---
-
+哈哈哈
+---
 cordova plugin add cordova-scan-plugin
